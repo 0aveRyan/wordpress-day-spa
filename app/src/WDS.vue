@@ -1,7 +1,7 @@
 <template type="text/babel">
 	<main id="wds-app">
 		<wordtabs :tabs="wdsTabs"></wordtabs>
-    <router-view></router-view>
+    		<router-view></router-view>
 	</main>
 </template>
 <script type="text/babel">
