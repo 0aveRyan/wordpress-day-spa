@@ -12,10 +12,10 @@ Example of a Vue.js-powered SPA running in the WordPress Admin with vue-router a
 
 # using the project
 
-`npm install` to bring down dependencies
+* `npm install` to bring down dependencies
 
-`npm run dev` to generate the bundles plus watch files and recompile on change
-`npm run build` to generate small, minified production assets
+* `npm run dev` to generate the bundles plus watch files and recompile on change
+* `npm run build` to generate small, minified production assets
 
 # how it works
 
