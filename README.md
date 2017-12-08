@@ -1,6 +1,8 @@
 # wordpress-day-spa
 Example of a Vue.js-powered SPA running in the WordPress Admin with vue-router and vue-loader.
 
+![screenshot of spa in action](https://raw.githubusercontent.com/0aveRyan/wordpress-day-spa/master/app/assets/wp-day-spa.gif)
+
 # project structure
 
 * `package.json` - defines dependencies
