@@ -1,5 +1,5 @@
 <template type="text/babel">
-  <div class="wrap" v-if="pewpew">
+  <div class="wrap" v-if="hasLoaded">
     <h1>Posts</h1>
     <post-table :posts="postData"></post-table>
   </div>
@@ -11,10 +11,9 @@ export default {
     name: 'info',
     data: function() {
         return {
-            pewpew: false,
+            hasLoaded: false,
             wdsData: wdsData,
-            postData: false,
-            wp: wp
+            postData: false
         }
     },
     mounted: function () { 
@@ -27,7 +26,7 @@ export default {
             const resource = wdsData.restUrl + 'wp/v2/posts'; // nonce header set in wds.core.js
             this.axios.get(resource).then((response) => {
                 this.postData = response.data;
-                this.pewpew = true;
+                this.hasLoaded = true;
             })
         }
     }
