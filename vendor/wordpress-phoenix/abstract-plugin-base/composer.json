@@ -1,0 +1,21 @@
+{
+  "name": "wordpress-phoenix/abstract-plugin-base",
+  "type": "library",
+  "description": "PHP class to extend when building a WordPress plugin allowing you to follow smart plugin setup standards.",
+  "keywords": ["wordpress","plugin","abstract","standardize","boilerplate"],
+  "homepage": "https://github.com/WordPress-Phoenix/abstract-plugin-base",
+  "license": "GPL-v3",
+  "authors": [
+    {
+      "name": "Seth Carstens",
+      "email": "seth.carstens@gmail.com",
+      "homepage": "http://github.com/scarstens",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "classmap": {
+      "classmap": ["src/abstract-plugin.php"]
+    }
+  }
+}

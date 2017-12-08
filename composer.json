@@ -1,0 +1,5 @@
+{
+    "require": {
+        "WordPress-Phoenix/abstract-plugin-base": "^2.5"
+    }
+}
