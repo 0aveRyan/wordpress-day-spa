@@ -24,7 +24,7 @@ Example of a Vue.js-powered SPA running in the WordPress Admin with vue-router a
 
 1. Work on your SPA in `app/src`.
 2. Execute `npm run dev` to use webpack to watch those files for changes and place compiled bundles in `app/assets/js`.
-3. `vue-loader` and `babel` help `webpack` translate the Single Component `.vue` files into native JavaScript that builds DOM nodes, contains script and CSS all in a unified file (webpack can be used to split all CSS into a single file as well).
+3. `vue-loader` and `babel` help `webpack` translate the Single Component `.vue` files into native JavaScript that builds DOM nodes, contains script and CSS all in a unified file (webpack can be used to [split all CSS into a single file](https://github.com/vuejs/vue-loader/blob/master/docs/en/configurations/extract-css.md) as well).
 4. When the dashboard page is loaded, the bundles containing libraries and the app itself are enqueued. 
 5. The app latches onto the `<div id="app"></div>` and Vue renders the application. `vue-router` by default uses hash navigation, which can be used to launch directly into a screen within the app.
 
