@@ -3,12 +3,12 @@ Example of a Vue.js-powered SPA running in the WordPress Admin with vue-router a
 
 # project structure
 
-`package.json` - defines all dependencies
-`webpack.config.js` - defines codesplitting and processing
-`app/src/wds.core.js` - main app scaffolding with dependency-injection
-`app/src/WDS.vue` - main app template injected onto page
-`app/assets/js/wds.app.bundle.js` - main bundle containing CSS, JS and HTML to render
-`app/assets/js/wds.lib.bundle.js` - main bundle containing vue, vue-router, axios and other libraries.
+* `package.json` - defines all dependencies
+* `webpack.config.js` - defines codesplitting and processing
+* `app/src/wds.core.js` - main app scaffolding with dependency-injection
+* `app/src/WDS.vue` - main app template injected onto page
+* `app/assets/js/wds.app.bundle.js` - main bundle containing CSS, JS and HTML to render
+* `app/assets/js/wds.lib.bundle.js` - main bundle containing vue, vue-router, axios and other libraries.
 
 # using the project
 
