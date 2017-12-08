@@ -3,10 +3,10 @@ Example of a Vue.js-powered SPA running in the WordPress Admin with vue-router a
 
 # project structure
 
-* `package.json` - defines all dependencies
-* `webpack.config.js` - defines codesplitting and processing
-* `app/src/wds.core.js` - main app scaffolding with dependency-injection
-* `app/src/WDS.vue` - main app template injected onto page
+* `package.json` - defines dependencies
+* `webpack.config.js` - defines codesplitting and compile processes
+* `app/src/wds.core.js` - main app scaffolding with dependency-injection, component registration, route definition and management and script that mounts the app.
+* `app/src/WDS.vue` - main app template injected onto page containing the `<router-link>` and `<router-view>` components.
 * `app/assets/js/wds.app.bundle.js` - main bundle containing CSS, JS and HTML to render
 * `app/assets/js/wds.lib.bundle.js` - main bundle containing vue, vue-router, axios and other libraries.
 
@@ -15,12 +15,13 @@ Example of a Vue.js-powered SPA running in the WordPress Admin with vue-router a
 * `npm install` to bring down dependencies
 
 * `npm run dev` to generate the bundles plus watch files and recompile on change
+
 * `npm run build` to generate small, minified production assets
 
 # how it works
 
-1. Build your SPA in `app/src`.
-2. Execute `npm run dev` to use webpack to watch those files for changes and recompile the distribution assets in `app/assets/js`.
+1. Work on your SPA in `app/src`.
+2. Execute `npm run dev` to use webpack to watch those files for changes and place compiled bundles in `app/assets/js`.
 3. `vue-loader` and `babel` help `webpack` translate the Single Component `.vue` files into native JavaScript that builds DOM nodes, contains script and CSS all in a unified file (webpack can be used to split all CSS into a single file as well).
 4. When the dashboard page is loaded, the bundles containing libraries and the app itself are enqueued. 
 5. The app latches onto the `<div id="app"></div>` and Vue renders the application. `vue-router` by default uses hash navigation, which can be used to launch directly into a screen within the app.
