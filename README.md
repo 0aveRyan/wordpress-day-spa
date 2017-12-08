@@ -12,6 +12,8 @@ Example of a Vue.js-powered SPA running in the WordPress Admin with vue-router a
 * `app/assets/js/wds.app.bundle.js` - main bundle containing CSS, JS and HTML to render
 * `app/assets/js/wds.lib.bundle.js` - main bundle containing vue, vue-router, axios and other libraries.
 
+* `app/admin/class-spa.php` registers the dashboard page with wordpress, enqueues bundles and contains the HTML markup used by the app to mount.
+
 # using the project
 
 * `npm install` to bring down dependencies
