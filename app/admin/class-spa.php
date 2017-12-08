@@ -55,7 +55,6 @@ class SPA {
 			<div id="app"></div>
 		</div>
 		<?php echo ob_get_clean();
-		echo '<div id="app"></div>';
 	}
 
 	/**
