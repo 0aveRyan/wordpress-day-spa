@@ -17,6 +17,14 @@ Example of a Vue.js-powered SPA running in the WordPress Admin with vue-router a
 `npm run dev` to generate the bundles plus watch files and recompile on change
 `npm run build` to generate small, minified production assets
 
+# how it works
+
+1. Build your SPA in `app/src`.
+2. Execute `npm run dev` to use webpack to watch those files for changes and recompile the distribution assets in `app/assets/js`.
+3. `vue-loader` and `babel` help `webpack` translate the Single Component `.vue` files into native JavaScript that builds DOM nodes, contains script and CSS all in a unified file (webpack can be used to split all CSS into a single file as well).
+4. When the dashboard page is loaded, the bundles containing libraries and the app itself are enqueued. 
+5. The app latches onto the `<div id="app"></div>` and Vue renders the application. `vue-router` by default uses hash navigation, which can be used to launch directly into a screen within the app.
+
 # spa dependency injection
 
 babel and vue-loader allow us to use `import` and `export` within our `.vue` files to handle dependencies.
