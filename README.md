@@ -30,6 +30,8 @@ Example of a Vue.js-powered SPA running in the WordPress Admin with vue-router a
 4. When the dashboard page is loaded, the bundles containing libraries and the app itself are enqueued and the app script is "localized" with a WP-API nonce and other supporting metadata.
 5. The app latches onto the `<div id="app"></div>` and Vue renders the application. `vue-router` by default uses hash navigation, which can be used to launch directly into a screen within the app.
 
+[example wp-api call](https://github.com/0aveRyan/wordpress-day-spa/blob/master/app/src/components/Info.vue#L26-L32)
+
 # spa dependency injection
 
 babel and vue-loader allow us to use `import` and `export` within our `.vue` files to handle dependencies.
