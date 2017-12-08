@@ -37,9 +37,9 @@ babel and vue-loader allow us to use `import` and `export` within our `.vue` fil
 All third-party dependencies and custom components are managed in the `app/src/wds.core.js` file. 
 
 ### Adding a new component
-1. Create your new `.vue` file with a `<template type="text/babel"></template>` and a `<script type="text/babel"><template>`
-2. `import Vue from` from our `wds.core.js` file in the component. This makes all other dependencies available.
-2. `export` with a [new component definition](https://vuejs.org/v2/guide/single-file-components.html). [Example](https://github.com/0aveRyan/wordpress-day-spa/blob/master/app/src/components/PostTable.vue#L22-L28).
+1. Create your new `.vue` file with a `<template type="text/babel"></template>` and a `<script type="text/babel"></script>`
+2. In the `<script>` definition, `import Vue from` from our `wds.core.js` file in the component. This makes all other dependencies available.
+2. In the `<script>` definition, `export` with a [new component definition](https://vuejs.org/v2/guide/single-file-components.html). [Example](https://github.com/0aveRyan/wordpress-day-spa/blob/master/app/src/components/PostTable.vue#L22-L28).
 2. `import YourNewComponent from` the location in your directory in the `wds.core.js` file.
 3. Set a `Vue.component( 'your-component-elem', YourNewComponent )`
 
